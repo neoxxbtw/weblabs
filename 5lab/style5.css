@@ -105,12 +105,12 @@ a {
 }
 .flex-item {
   border: 5px double burlywood;
-  padding: 5px;
+  padding: 6px;
   background-color: rgba(164, 231, 77, 0.5);
   text-align: center;
   max-width: 250px;
 }
 
 .flex-item:nth-child(5){
-  flex-grow: 3;
+  flex-grow: 2;
 }
