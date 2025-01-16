@@ -1,0 +1,116 @@
+/* Общие стили */
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background-color: rgb(230, 214, 144);
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 2;
+  margin: 25px;
+  text-align: left;
+  position: relative;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  position: relative;
+  z-index: 100;
+}
+
+.p1, .p2, .p3 {
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  max-width: 1000px;
+  border: 3px dotted goldenrod;
+}
+
+p {
+  font-weight: 400;
+  color: hsla(0, 0, 0, 1);
+  max-width: 1000px;
+}
+
+ul > li {
+  color: rgb(0, 0, 0);
+  position: relative;
+  max-width: 100%;
+  padding-left: 10px;
+}
+
+img {
+  max-width: 20%;
+  height: auto;
+  right: 10px;
+  border: 5px ridge rgb(94, 82, 19);
+  position: absolute;
+  z-index: 100; 
+}
+
+ul {
+  position: relative;
+  list-style: none; 
+  padding: 0; 
+}
+
+a {
+  color: rgb(94, 82, 19);
+  text-decoration: none;
+  position: relative;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(23, 54, 55);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: lemonchiffon;
+}
+
+
+.fixed {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px;
+  border: 2px solid black;
+  z-index: 100; 
+}
+
+.flex-section {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 1em;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+}
+.flex-item {
+  border: 5px double burlywood;
+  padding: 5px;
+  background-color: rgba(164, 231, 77, 0.5);
+  text-align: center;
+  max-width: 250px;
+}
+
+.flex-item:nth-child(5){
+  flex-grow: 3;
+}
